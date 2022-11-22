@@ -31,13 +31,11 @@ const login = () => {
                 .then((response) => response.json())
                 .then((data) => {
                     if (!data.token){
-                        console.log("ass");
-                        console.log(data);
+                       
                         alert(data.error);
                     }
                     else{
-                        console.log("hole");
-                        console.log(data);
+                       
                         window.location.replace("./homeScreen.html");
                     }
 
